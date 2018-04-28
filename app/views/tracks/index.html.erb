@@ -1,0 +1,7 @@
+<% @tracks.each do |track| %>
+  <div class="track text-center" id="play-video">
+    <iframe id="video" width="99" height="99" src="https://www.youtube.com/embed/M7odRIX6uNI?rel=0" frameborder="0" allowfullscreen class="iframe"></iframe>
+    <h2><%= track.artist %><h2>
+    <h2><%= track.title %><h2>
+  </div>
+<% end %>

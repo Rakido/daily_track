@@ -1,0 +1,16 @@
+<h1> Nouveau track </h1>
+<%= simple_form_for @track do |f| %>
+<h2>
+  <%= f.input :artist,  placeholder: 'Nom de l\'artiste' %>
+</h2>
+
+<h2>
+  <%= f.input :title,  placeholder: 'Titre du track' %>
+</h2>
+
+<h2>
+  <%= f.input :url,  placeholder: 'Url youtube' %>
+</h2>
+
+<%= f.submit 'Online', class: 'btn' %>
+<% end %>
